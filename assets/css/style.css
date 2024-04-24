@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --header-background: #747DFF59;
+    --banner-blur: #00000040;
+    --buscar-background: #747DFF59;
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/*Componentes gerais */
+.ul-unset{
+    list-style: none;
+}
+
+.banner-default{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.a-unset{
+    text-decoration: none;
+}
+
+
+/* FIM */
+
+
+/* HEADER */
+
+.introducao {
+    height: 75rem;
+    background-image: url("/assets/img/Headerbanner.png");
+}
+
+header {
+    height: 8.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: hsla(236, 100%, 73%, 0.258);
+    padding-inline: 8rem;
+}
+
+.header-logo {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+}
+
+header .nav-item{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #FFFFFF;
+}
