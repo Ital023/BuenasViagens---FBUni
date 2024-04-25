@@ -219,7 +219,7 @@ header .nav-item{
     }
     
     .schedule-box{
-        height: 26rem;
+        height: 29rem;
         border-radius: 8px;
         padding-inline: 3rem;
         background-color: #F9F9F9;
@@ -245,7 +245,7 @@ header .nav-item{
     
     .form-box label{
         font-family: "Poppins", sans-serif;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 400;
         text-align: left;
         color: #767F86;
@@ -261,7 +261,7 @@ header .nav-item{
         width: 18rem;
         height: 3rem;
         font-family: "Poppins", sans-serif;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 400;
         letter-spacing: 0.08em;
         outline: none;
