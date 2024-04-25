@@ -41,7 +41,7 @@ p {
 
 .introducao {
     height: 75rem;
-    background-image: url("/assets/img/Headerbanner.png");
+    background-image: url("../img/Headerbanner.png");
 }
 
 header {
