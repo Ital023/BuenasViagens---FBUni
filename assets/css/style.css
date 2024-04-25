@@ -33,6 +33,23 @@ p {
     text-decoration: none;
 }
 
+.btn {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #FFAD32;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.btn-lg {
+    padding: 1rem 6rem;
+    font-size: 2rem;
+}
 
 /* FIM */
 
@@ -40,7 +57,6 @@ p {
 /* HEADER */
 
 .introducao {
-    height: 75rem;
     background-image: url("../img/Headerbanner.png");
 }
 
@@ -73,6 +89,100 @@ header .nav-item{
     color: #FFFFFF;
 }
 
+.introducao-content{
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introducao-content h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.841);    
+}
+
+.introducao-schedule{
+    height: 20rem;
+    background: hsla(236, 100%, 73%, 0.258);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-box{
+    background-color: #F9F9F9;
+    max-width: 140rem;
+    height: 14rem;
+    border-radius: 8px;
+    padding-inline: 3rem;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box label{
+    font-family: "Poppins", sans-serif;
+    font-size: 2.08rem;
+    font-weight: 400;
+    text-align: left;
+    color: #767F86;
+}
+
+.form-box #lugar{
+    width: 35rem;
+}
+
+.form-box__input {
+    border: 1px solid #B8C0C7;
+    background: #FFFFFF;
+    width: 28.9rem;
+    height: 4.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    outline: none;
+    color: #767F86;
+    padding-inline: 1rem;
+    border-radius: 8px;
+}
+
+.form-box__input::-webkit-calendar-picker-indicator {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+.datepicker {
+    -webkit-appearance: none;
+    background-image: url("../img/calendar.png");
+    background-size: 3.25rem 3.25rem; 
+    background-repeat: no-repeat;
+    background-position: right center; 
+    background-position: calc(100% - 1rem) center;
+  }
+  
+  .datepicker::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+  .btn-form{
+    margin-top: 3rem;
+  }
 
 /* RESPONSIVIDADE */
 
@@ -102,5 +212,88 @@ header .nav-item{
     }
 
 
+    .introducao-schedule{
+        height: 33rem;
+        background: hsla(236, 100%, 73%, 0.258);
+        display: flex;
+    }
+    
+    .schedule-box{
+        height: 26rem;
+        border-radius: 8px;
+        padding-inline: 3rem;
+        background-color: #F9F9F9;
+
+
+    }
+    
+    .form-inputs{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 1.2rem;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .form-box{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
+    .form-box label{
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: left;
+        color: #767F86;
+    }
+    
+    .form-box #lugar{
+        width: 18rem;
+    }
+    
+    .form-box__input {
+        border: 1px solid #B8C0C7;
+        background: #FFFFFF;
+        width: 18rem;
+        height: 3rem;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0.08em;
+        outline: none;
+        color: #767F86;
+        padding-inline: 1rem;
+        border-radius: 8px;
+    }
+    
+    .form-box__input::-webkit-calendar-picker-indicator {
+        width: 2rem;
+        height: 2rem;
+      }
+    
+    .datepicker {
+        -webkit-appearance: none;
+        background-image: url("../img/calendar.png");
+        background-size: 2rem 2rem; 
+        background-repeat: no-repeat;
+        background-position: right center; 
+        background-position: calc(100% - 1rem) center;
+      }
+      
+      .datepicker::-webkit-calendar-picker-indicator {
+        display: none;
+      }
+    
+      .btn-form{
+        margin-top: .5rem;
+      }
+
+      .btn-lg{
+        padding: .5rem 6.5rem;
+      }
 
 }
