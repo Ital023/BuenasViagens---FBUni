@@ -8,7 +8,7 @@
     font-size: 62.5%;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: 0;
@@ -19,17 +19,17 @@ p {
 }
 
 /*Componentes gerais */
-.ul-unset{
+.ul-unset {
     list-style: none;
 }
 
-.banner-default{
+.banner-default {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.a-unset{
+.a-unset {
     text-decoration: none;
 }
 
@@ -46,10 +46,37 @@ p {
     font-weight: 700;
 }
 
+.btn-md {
+    padding: 1rem 4rem;
+    font-size: 1.8rem;
+    width: 21rem;
+}
+
 .btn-lg {
     padding: 1rem 6rem;
     font-size: 2rem;
 }
+
+.d-flex {
+    display: flex;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.g-justify-end {
+    justify-self: flex-end;
+}
+
+.g-justify-start {
+    justify-self: flex-start;
+}
+
+.box-shadow {
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
 
 /* FIM */
 
@@ -82,14 +109,14 @@ header ul {
     gap: 7rem;
 }
 
-header .nav-item{
+header .nav-item {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 2.4rem;
     color: #FFFFFF;
 }
 
-.introducao-content{
+.introducao-content {
     height: 50rem;
     display: flex;
     justify-content: center;
@@ -101,10 +128,10 @@ header .nav-item{
     font-size: 3.6rem;
     font-weight: 700;
     color: #FFFFFF;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.841);    
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.841);
 }
 
-.introducao-schedule{
+.introducao-schedule {
     height: 20rem;
     background: hsla(236, 100%, 73%, 0.258);
     display: flex;
@@ -112,7 +139,7 @@ header .nav-item{
     align-items: center;
 }
 
-.schedule-box{
+.schedule-box {
     background-color: #F9F9F9;
     max-width: 140rem;
     height: 14rem;
@@ -120,7 +147,7 @@ header .nav-item{
     padding-inline: 3rem;
 }
 
-.form-inputs{
+.form-inputs {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -130,12 +157,12 @@ header .nav-item{
 
 }
 
-.form-box{
+.form-box {
     display: flex;
     flex-direction: column;
 }
 
-.form-box label{
+.form-box label {
     font-family: "Poppins", sans-serif;
     font-size: 2.08rem;
     font-weight: 400;
@@ -143,7 +170,7 @@ header .nav-item{
     color: #767F86;
 }
 
-.form-box #lugar{
+.form-box #lugar {
     width: 35rem;
 }
 
@@ -165,60 +192,111 @@ header .nav-item{
 .form-box__input::-webkit-calendar-picker-indicator {
     width: 3.5rem;
     height: 3.5rem;
-  }
+}
 
 .datepicker {
     -webkit-appearance: none;
     background-image: url("../img/calendar.png");
-    background-size: 3.25rem 3.25rem; 
+    background-size: 3.25rem 3.25rem;
     background-repeat: no-repeat;
-    background-position: right center; 
+    background-position: right center;
     background-position: calc(100% - 1rem) center;
-  }
-  
-  .datepicker::-webkit-calendar-picker-indicator {
-    display: none;
-  }
+}
 
-  .btn-form{
+.datepicker::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.btn-form {
     margin-top: 3rem;
-  }
+}
+
+
+/* APRESENTACAO */
+
+.apresentacao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 70rem;
+    padding: 4rem 0 4rem 0;
+}
+
+.apresentacao-content {
+    padding: 0 5rem 0 5rem;
+    gap: 3rem;
+}
+
+.apresentacao-content img {
+    width: 34rem;
+}
+
+.apresentacao-content h2 {
+    font-family: "Lobster", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 400;
+    text-align: left;
+    color: #747DFF;
+    margin: 0;
+}
+
+.apresentacao-content p {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+    color: #3C4852;
+}
+
+.apresentacao-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5.2rem;
+}
+
+.apresentacao-gallery img {
+    width: 30rem;
+    background-color: #fff;
+    padding: 1.1rem;
+    border-radius: 8px;
+}
+
 
 /* RESPONSIVIDADE */
 
-@media screen and (max-width:540px){
-    header{
+@media screen and (max-width:540px) {
+    header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-inline: 5rem;
     }
 
-    header ul{
+    header ul {
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
         padding-inline: 2rem 1rem;
     }
 
-    header .nav-item{
+    header .nav-item {
         font-size: 1.4rem;
         text-align: center;
 
     }
 
-    .header-logo{
+    .header-logo {
         font-size: 2.8rem;
     }
 
 
-    .introducao-schedule{
+    .introducao-schedule {
         height: 33rem;
         background: hsla(236, 100%, 73%, 0.258);
         display: flex;
     }
-    
-    .schedule-box{
+
+    .schedule-box {
         height: 29rem;
         border-radius: 8px;
         padding-inline: 3rem;
@@ -226,35 +304,35 @@ header .nav-item{
 
 
     }
-    
-    .form-inputs{
+
+    .form-inputs {
         display: flex;
         flex-direction: column;
         height: 100%;
         gap: 1.2rem;
         align-items: center;
         justify-content: center;
-    
+
     }
-    
-    .form-box{
+
+    .form-box {
         display: flex;
         flex-direction: column;
         gap: .5rem;
     }
-    
-    .form-box label{
+
+    .form-box label {
         font-family: "Poppins", sans-serif;
         font-size: 1.5rem;
         font-weight: 400;
         text-align: left;
         color: #767F86;
     }
-    
-    .form-box #lugar{
+
+    .form-box #lugar {
         width: 18rem;
     }
-    
+
     .form-box__input {
         border: 1px solid #B8C0C7;
         background: #FFFFFF;
@@ -269,31 +347,61 @@ header .nav-item{
         padding-inline: 1rem;
         border-radius: 8px;
     }
-    
+
     .form-box__input::-webkit-calendar-picker-indicator {
         width: 2rem;
         height: 2rem;
-      }
-    
+    }
+
     .datepicker {
         -webkit-appearance: none;
         background-image: url("../img/calendar.png");
-        background-size: 2rem 2rem; 
+        background-size: 2rem 2rem;
         background-repeat: no-repeat;
-        background-position: right center; 
+        background-position: right center;
         background-position: calc(100% - 1rem) center;
-      }
-      
-      .datepicker::-webkit-calendar-picker-indicator {
-        display: none;
-      }
-    
-      .btn-form{
-        margin-top: .5rem;
-      }
+    }
 
-      .btn-lg{
+    .datepicker::-webkit-calendar-picker-indicator {
+        display: none;
+    }
+
+    .btn-form {
+        margin-top: .5rem;
+    }
+
+    .btn-lg {
         padding: .5rem 6.5rem;
-      }
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apresentacao-content {
+        padding-inline: 2rem;
+    }
+    
+    .apresentacao-content img {
+        width: 20rem;
+    }
+    
+    .apresentacao-content h2 {
+        font-size: 3rem;
+    }
+
+    .apresentacao-gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 6rem;
+    }
+    
+    .apresentacao-gallery img {
+        width: 30rem;
+        background-color: #fff;
+        padding: 1.1rem;
+        border-radius: 8px;
+    }
 
 }
