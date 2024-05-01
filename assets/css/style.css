@@ -13,11 +13,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    transition: .5s;
 }
 
 p {
     margin: 0;
+}
+
+a, i, button {
+    transition: .5s;
 }
 
 /*Componentes gerais */
@@ -46,6 +49,15 @@ p {
     color: #FFFFFF;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
+}
+
+.btn-primary:hover{
+    background-color: #747DFF;
+}
+
+
+.btn-newsletter:hover{
+    background-color: #747DFF;
 }
 
 .btn-sm {
@@ -127,6 +139,10 @@ header .nav-item {
     font-weight: 700;
     font-size: 2.4rem;
     color: #FFFFFF;
+}
+
+header .nav-item:hover {
+    color: #FFAD32;
 }
 
 .introducao-content {
@@ -636,7 +652,6 @@ footer {
     align-items: center;
     gap: 2.4rem;
 }
-
 
 
 .footer-redes-redesSociais .redes-sociais i {
