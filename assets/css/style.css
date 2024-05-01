@@ -230,8 +230,8 @@ header .nav-item {
 .apresentacao {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 70rem;
-    padding: 4rem 0 4rem 0;
+    height: 90rem;
+    padding: 20rem 0 4rem 0;
 }
 
 .apresentacao-content {
@@ -637,30 +637,15 @@ footer {
     gap: 2.4rem;
 }
 
-.footer-redes-redesSociais .redes-sociais a {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #B8C0C7;
-    padding: 1rem ;
-    border-radius: 9999px;
-    position: relative;
-    
-}
+
 
 .footer-redes-redesSociais .redes-sociais i {
     font-size: 3.4rem;
     color: #B8C0C7;
-    text-align: center;
-    position: absolute;
-    bottom: .2rem;
-    right: .6rem;
-}
-
-.footer-redes-redesSociais .redes-sociais a:hover{
-    border: 2px solid #FFAD32;
 }
 
 .footer-redes-redesSociais .redes-sociais i:hover {
+    
     color: #FFAD32;
     
 }
@@ -780,7 +765,8 @@ footer {
     .apresentacao {
         display: flex;
         flex-direction: column;
-        height: 230rem;
+        padding-top: 5rem;
+        height: 220rem;
     }
 
     .apresentacao-content {
@@ -819,7 +805,7 @@ footer {
 
 
     .lugares{
-        height: 325rem;
+        height: 355rem;
         background: linear-gradient(65.68deg, #FFE7C2 -4.19%, #BDACFF 104.38%);
         padding-block: 5rem;
     }
@@ -854,7 +840,7 @@ footer {
     }
     
     .lugares .card .card-image img {
-        width: 30rem;
+        width: 100%;
     }
     
     .lugares .card .card-content {
@@ -894,8 +880,8 @@ footer {
     
     .buy-infos {
         display: flex;
-        gap: 4.3rem;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 1rem;        
     }
     
     .prices {
@@ -926,15 +912,15 @@ footer {
     }
 
     .btn-sm {
-        width: 20rem;
-        padding: 0;
+        width: 100%;
+        padding-block: 1rem;
         font-size: 1.6rem;
     
     }
 
     .depoimento {
         padding-inline: 2rem;
-        padding-top: 2rem;
+        padding-top: 6rem;
         height: 90rem;
     }
 
@@ -945,13 +931,27 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
-        height: 60rem;
+        height: 79rem;
         padding-inline: 1rem;
+        gap: 4rem;
     }
 
     .footer-direitos {
         padding: 0;
+        width: 100%;
     }
 
+    .line {
+        width: 35rem;
+    }
+
+
+    .footer-redes {
+        padding: 0;
+    }
+
+    .footer-redes-redesSociais {
+        gap: 1.5rem;
+    }
 
 }
